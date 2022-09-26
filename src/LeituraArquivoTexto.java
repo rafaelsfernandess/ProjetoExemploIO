@@ -25,7 +25,7 @@ public class LeituraArquivoTexto {
 					String vetor[] = linha.split(";");
 					
 					System.out.println("");
-					System.out.println("\t"+"nome: "+vetor[1]);
+					System.out.println("\t"+"nome: "+vetor[1].trim().replaceAll("\s+"," "));
 					System.out.println("\t"+"Código de barras: "+vetor[2].trim());
 					System.out.println("");
 					System.out.println("|-------------------------------------------------------------|");
